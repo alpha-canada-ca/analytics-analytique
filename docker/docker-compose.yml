@@ -1,0 +1,12 @@
+version: "3"
+services:
+  web:
+    image: "tbsacr.azurecr.io/analyst_tool:latest"
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080" 
+    container_name: analyst_node
+    volumes:
+      - ../src/:/usr/src/app
