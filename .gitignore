@@ -1,6 +1,9 @@
 #ignore file with API key
 **/config/
+**/node_modules/
 *.ini
+**/package-lock*
+**/package.json
 
 ### macOS ###
 # General
